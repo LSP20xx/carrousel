@@ -1,0 +1,152 @@
+.titleSlideOne {
+  background-color: #467034;
+  color: white;
+  font-weight: bold;
+  font-size: 56px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10rem;
+}
+.containerSlideOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fbf5f5;
+}
+.buttonShopNow {
+  background-color: #3a2012;
+  border: solid #3a2012 1px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  margin-left: 30rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+.buttonSlideTwo {
+  background-color: #3a2012;
+  border: solid #3a2012 1px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  margin-left: 20rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+.controlPrev {
+  background-color: #3a2012;
+  border-radius: 50%;
+  padding: 1px 6px;
+  width: 40px;
+  height: 40px;
+  margin-top: 18rem;
+  margin-left: 0.5rem;
+}
+.controlNext {
+  background-color: #3a2012;
+  border-radius: 50%;
+  padding: 1px 6px;
+  width: 40px;
+  height: 40px;
+  margin-top: 18rem;
+  margin-right: 0.5rem;
+}
+.subtitleSlideOne {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+  padding-right: 120px;
+  color: #474747;
+}
+.containerSlideTwo {
+  display: grid;
+  background-color: #fff8f1;
+  grid-template-columns: 1.5fr 0.5fr 1.5fr;
+}
+.superJuiceImage {
+  width: 16rem;
+  margin-top: 130px;
+  margin-left: 8rem;
+}
+.titleSlideTwo {
+  font-size: 36px;
+  color: #3a2012;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.sutitleSlideTwo {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  color: #474747;
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.containerSlideThree {
+  display: grid;
+  background-color: #fbf5f5;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+}
+.peacefulcalmImage {
+  width: 350px;
+  margin-top: 4rem;
+}
+.buttonSlideThree {
+  background-color: #d2b18c;
+  border: solid #d2b18c 1px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #3a2012;
+  margin-left: 2rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+.titleSlideThree {
+  font-size: 36px;
+  color: #3a2012;
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+.subtitleSlideThree {
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  color: #474747;
+  margin-left: 1rem;
+  margin-bottom: 2.5rem;
+}
+.containerIcons {
+  margin: 20px auto;
+  width: 60%;
+  text-align: center;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.containerIconsColor {
+  margin: 20px auto;
+  width: 60%;
+  padding-top: 1rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.colorOneSlide {
+  background-color: #fbf5f5;
+}
+.colorTwoSlide {
+  background-color: #fff8f1;
+}
+.colorThreeSlide {
+  background-color: #fbf5f5;
+}
+
+@media screen and (max-width: 1200px) {
+  .containerSlideOne {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
