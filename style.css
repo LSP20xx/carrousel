@@ -9,11 +9,38 @@
   padding-right: 10px;
   margin-top: 10rem;
 }
+.evenfloImage {
+  width: 650px;
+}
 .containerSlideOne {
+  height: 65vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #fbf5f5;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titleSlideOneArea imageSlideOne"
+    "subtitleSlideOneArea imageSlideOne"
+    "containerIconsArea containerIconsArea";
 }
+
+.titleSlideOneArea {
+  grid-area: titleSlideOneArea;
+}
+
+.subtitleSlideOneArea {
+  grid-area: subtitleSlideOneArea;
+}
+
+.imageSlideOne {
+  grid-area: imageSlideOne;
+}
+
+.containerIconsArea {
+  grid-area: containerIconsArea;
+}
+
 .buttonShopNow {
   background-color: #3a2012;
   border: solid #3a2012 1px;
@@ -22,7 +49,8 @@
   color: white;
   margin-left: 30rem;
   font-family: Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
+  text-decoration: none;
 }
 .buttonSlideTwo {
   background-color: #3a2012;
@@ -32,7 +60,8 @@
   color: white;
   margin-left: 20rem;
   font-family: Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
+  text-decoration: none;
 }
 .controlPrev {
   background-color: #3a2012;
@@ -61,11 +90,42 @@
   padding-right: 120px;
   color: #474747;
 }
+
 .containerSlideTwo {
-  display: grid;
+  height: 70vh;
   background-color: #fff8f1;
-  grid-template-columns: 1.5fr 0.5fr 1.5fr;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titleSlideTwoArea superJuiceArea womenJuiceImageArea"
+    "sutitleSlideTwoArea superJuiceArea womenJuiceImageArea"
+    "containerIconsColor containerIconsColor containerIconsColor";
 }
+
+.titleSlideTwoArea {
+  grid-area: titleSlideTwoArea;
+}
+
+.sutitleSlideTwoArea {
+  grid-area: sutitleSlideTwoArea;
+}
+
+.superJuiceArea {
+  grid-area: superJuiceArea;
+}
+
+.womenJuiceImageArea {
+  grid-area: womenJuiceImageArea;
+}
+
+.containerIconsColor {
+  grid-area: containerIconsColor;
+}
+
 .superJuiceImage {
   width: 16rem;
   margin-top: 130px;
@@ -85,16 +145,52 @@
   margin-left: 2.5rem;
   margin-bottom: 2.5rem;
 }
+
 .containerSlideThree {
-  display: grid;
+  height: 70vh;
   background-color: #fbf5f5;
+  display: grid;
   grid-template-columns: 1.5fr 1fr 1.5fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "yogaWomanImageArea titleSlideThreeArea lessStressImageArea"
+    "yogaWomanImageArea subtitleSlideThreeArea lessStressImageArea"
+    "yogaWomanImageArea buttonSlideThree lessStressImageArea"
+    "containerIconsColor containerIconsColor containerIconsColor";
 }
+
+.titleSlideThreeArea {
+  grid-area: titleSlideThreeArea;
+}
+
+.subtitleSlideThreeArea {
+  grid-area: subtitleSlideThreeArea;
+}
+
+.yogaWomanImageArea {
+  grid-area: yogaWomanImageArea;
+}
+
+.lessStressImageArea {
+  grid-area: lessStressImageArea;
+}
+
+.buttonSlideThree {
+  grid-area: buttonSlideThree;
+}
+
+.containerIconsColor {
+  grid-area: containerIconsColor;
+}
+
 .peacefulcalmImage {
   width: 350px;
   margin-top: 4rem;
 }
-.buttonSlideThree {
+.buttonSlideLast {
   background-color: #d2b18c;
   border: solid #d2b18c 1px;
   border-radius: 20px;
@@ -102,7 +198,8 @@
   color: #3a2012;
   margin-left: 2rem;
   font-family: Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
+  text-decoration: none;
 }
 .titleSlideThree {
   font-size: 36px;
@@ -144,9 +241,381 @@
   background-color: #fbf5f5;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 767px) {
   .containerSlideOne {
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleSlideOneArea titleSlideOneArea"
+      "subtitleSlideOneArea imageSlideOne"
+      "containerIconsArea containerIconsArea";
+  }
+
+  .titleSlideOneArea {
+    grid-area: titleSlideOneArea;
+  }
+
+  .subtitleSlideOneArea {
+    grid-area: subtitleSlideOneArea;
+  }
+
+  .imageSlideOne {
+    grid-area: imageSlideOne;
+  }
+
+  .containerIconsArea {
+    grid-area: containerIconsArea;
+  }
+  .titleSlideOne {
+    font-size: 52px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 2.5rem;
+  }
+  .subtitleSlideOne {
+    font-size: 20px;
+    text-align: left;
+    padding-right: 8px;
+  }
+  .subtitleSlideOneArea {
+    width: 50vw;
+    margin-left: 3rem;
+  }
+  .buttonShopNow {
+    padding: 10px 20px;
+    margin-left: 2.5rem;
+  }
+  .imageSlideOne {
+  }
+  .evenfloImage {
+    width: 360px;
+    margin-top: -10rem;
+  }
+
+  .containerSlideTwo {
+    height: 50vh;
+    background-image: url(./img/womanJuiceBG.png);
+    /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-size: cover;
+    /* Posición de la imagen de fondo */
+    background-position: center;
+    /* Crear un pseudo-elemento para la opacidad */
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleSlideTwoArea superJuiceArea"
+      "sutitleSlideTwoArea superJuiceArea"
+      "containerIconsColor containerIconsColor";
+  }
+
+  .titleSlideTwoArea {
+    grid-area: titleSlideTwoArea;
+  }
+
+  .superJuiceArea {
+    grid-area: superJuiceArea;
+  }
+
+  .sutitleSlideTwoArea {
+    grid-area: sutitleSlideTwoArea;
+  }
+
+  .containerIconsColor {
+    grid-area: containerIconsColor;
+  }
+
+  .titleSlideTwoArea {
+    grid-area: titleSlideTwoArea;
+  }
+
+  .superJuiceArea {
+    grid-area: superJuiceArea;
+  }
+
+  .sutitleSlideTwoArea {
+    grid-area: sutitleSlideTwoArea;
+  }
+  .superJuiceImage {
+    width: 12rem;
+    margin-top: 130px;
+    margin-left: 8rem;
+  }
+  .titleSlideTwo {
+    font-size: 32px;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+  }
+  .buttonSlideTwo {
+    padding: 10px;
+    margin-top: -3rem;
+    margin-left: 16rem;
+    font-family: Helvetica, sans-serif;
+    width: 160px;
+  }
+  .sutitleSlideTwo {
+    font-size: 20px;
+    margin-left: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .containerSlideThree {
+    background-image: url(./img/yogaWomanBG.png);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-color: #fbf5f5;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleSlideThreeArea lessStressImageArea"
+      "subtitleSlideThreeArea buttonSlideThree"
+      "containerIconsColor containerIconsColor";
+  }
+
+  .titleSlideThreeArea {
+    grid-area: titleSlideThreeArea;
+  }
+
+  .containerIconsColor {
+    grid-area: containerIconsColor;
+  }
+
+  .buttonSlideThree {
+    grid-area: buttonSlideThree;
+  }
+
+  .subtitleSlideThreeArea {
+    grid-area: subtitleSlideThreeArea;
+  }
+
+  .lessStressImageArea {
+    grid-area: lessStressImageArea;
+  }
+
+  .peacefulcalmImage {
+    width: 260px;
+    margin-top: 6.5rem;
+    margin-left: 1rem;
+  }
+  .titleSlideThree {
+    font-size: 36px;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    width: 50vw;
+    height: 20vh;
+    padding-top: 50px;
+  }
+  .subtitleSlideThree {
+    font-size: 20px;
+    color: #474747;
+    margin-left: 4rem;
+    margin-bottom: 2.5rem;
+    margin-top: -120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerSlideOne {
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleSlideOneArea titleSlideOneArea"
+      "subtitleSlideOneArea imageSlideOne"
+      "containerIconsArea containerIconsArea";
+  }
+
+  .titleSlideOneArea {
+    grid-area: titleSlideOneArea;
+  }
+
+  .subtitleSlideOneArea {
+    grid-area: subtitleSlideOneArea;
+  }
+
+  .imageSlideOne {
+    grid-area: imageSlideOne;
+  }
+
+  .containerIconsArea {
+    grid-area: containerIconsArea;
+  }
+  .titleSlideOne {
+    font-size: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 2.5rem;
+  }
+  .subtitleSlideOne {
+    font-size: 16px;
+    text-align: left;
+    padding-right: 8px;
+  }
+  .subtitleSlideOneArea {
+    width: 50vw;
+    margin-left: 1rem;
+  }
+  .buttonShopNow {
+    padding: 10px 20px;
+    margin-left: 2.5rem;
+    font-size: 14px;
+  }
+  .imageSlideOne {
+  }
+  .evenfloImage {
+    width: 200px;
+    margin-top: -10rem;
+  }
+  .textIcons {
+    font-size: 14px;
+  }
+  .iconImage {
+    width: 45px;
+    margin: 5px auto;
+    padding: 5px;
+  }
+  .containerSlideTwo {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleSlideTwoArea titleSlideTwoArea"
+      "sutitleSlideTwoArea superJuiceArea"
+      "containerIconsColor containerIconsColor";
+  }
+
+  .sutitleSlideTwoArea {
+    grid-area: sutitleSlideTwoArea;
+  }
+
+  .containerIconsColor {
+    grid-area: containerIconsColor;
+  }
+
+  .superJuiceArea {
+    grid-area: superJuiceArea;
+  }
+
+  .titleSlideTwoArea {
+    grid-area: titleSlideTwoArea;
+  }
+
+  .buttonSlideTwo {
+    padding: 10px;
+    margin-top: -3rem;
+    margin-left: 1.5rem;
+    width: 160px;
+  }
+  .sutitleSlideTwo {
+    font-size: 20px;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  .titleSlideTwo {
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  .superJuiceImage {
+    width: 8rem;
+    margin-top: -60px;
+    margin-left: 9rem;
+  }
+  .containerSlideThree {
+    background-image: url(./img/yogaWomanBG.png);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    background-color: #fbf5f5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1.5fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleSlideThreeArea lessStressImageArea"
+      "subtitleSlideThreeArea lessStressImageArea"
+      "containerIconsColor containerIconsColor containerIconsColor";
+  }
+  .peacefulcalmImage {
+    width: 260px;
+    margin-top: 6.5rem;
+  }
+  .containerSlideThree {
+    background-image: url(./img/yogaWomanBG.png);
+    background-size: cover;
+    background-position: left;
+    height: 40vh;
+    background-color: #fbf5f5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titleSlideThreeArea lessStressImageArea"
+      "subtitleSlideThreeArea buttonSlideThree"
+      "containerIconsColor containerIconsColor";
+  }
+
+  .titleSlideThreeArea {
+    grid-area: titleSlideThreeArea;
+  }
+
+  .containerIconsColor {
+    grid-area: containerIconsColor;
+  }
+
+  .buttonSlideThree {
+    grid-area: buttonSlideThree;
+  }
+
+  .subtitleSlideThreeArea {
+    grid-area: subtitleSlideThreeArea;
+  }
+
+  .lessStressImageArea {
+    grid-area: lessStressImageArea;
+  }
+
+  .peacefulcalmImage {
+    width: 157px;
+    margin-top: 8rem;
+    margin-right: 2.5rem;
+    margin-left: -15px;
+  }
+  .titleSlideThree {
+    font-size: 32px;
+    margin-top: 5rem;
+    margin-left: 4rem;
+    width: 50vw;
+    height: 20vh;
+    padding-top: 50px;
+  }
+  .subtitleSlideThree {
+    margin-left: 4rem;
+    margin-top: -20px;
+  }
+  .buttonSlideLast {
+    padding: 10px 20px;
+    margin-left: 15px;
+    margin-right: 20px;
   }
 }
