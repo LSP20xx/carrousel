@@ -10,19 +10,17 @@
   margin-top: 10rem;
 }
 .evenfloImage {
-  width: 650px;
+  width: 100%;
+  min-width: 80%;
 }
 .containerSlideOne {
   height: 65vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas:
-    "titleSlideOneArea imageSlideOne"
-    "subtitleSlideOneArea imageSlideOne"
-    "containerIconsArea containerIconsArea";
+  grid-template-areas: "titleSlideOneArea imageSlideOne";
 }
 
 .titleSlideOneArea {
@@ -34,11 +32,18 @@
 }
 
 .imageSlideOne {
-  grid-area: imageSlideOne;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerIconsArea {
   grid-area: containerIconsArea;
+}
+
+.buttonShopNowArea {
+  width: 100%;
+  text-align: center;
 }
 
 .buttonShopNow {
@@ -47,7 +52,6 @@
   border-radius: 20px;
   padding: 10px 20px;
   color: white;
-  margin-left: 30rem;
   font-family: Helvetica, sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -245,13 +249,12 @@
   .containerSlideOne {
     height: 50vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "titleSlideOneArea titleSlideOneArea"
-      "subtitleSlideOneArea imageSlideOne"
-      "containerIconsArea containerIconsArea";
+      "subtitleSlideOneArea imageSlideOne";
   }
 
   .titleSlideOneArea {
@@ -289,11 +292,11 @@
     padding: 10px 20px;
     margin-left: 2.5rem;
   }
-  .imageSlideOne {
-  }
+
   .evenfloImage {
-    width: 360px;
+    width: 100%;
     margin-top: -10rem;
+    content: url("./img/withoutPills.png");
   }
 
   .containerSlideTwo {
@@ -428,13 +431,12 @@
   .containerSlideOne {
     height: 50vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-flow: row;
     grid-template-areas:
       "titleSlideOneArea titleSlideOneArea"
-      "subtitleSlideOneArea imageSlideOne"
-      "containerIconsArea containerIconsArea";
+      "subtitleSlideOneArea imageSlideOne";
   }
 
   .titleSlideOneArea {
