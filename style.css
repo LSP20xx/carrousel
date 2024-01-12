@@ -74,6 +74,10 @@
   text-decoration: none;
   display: inline-block; /* Para centrar el botón en Bootstrap */
 }
+.buttonShopNow:hover {
+  text-decoration: none;
+  color: #d2b18c;
+}
 
 .buttonSlideTwo {
   background-color: #3a2012;
@@ -85,6 +89,10 @@
   font-weight: 600;
   text-decoration: none;
   display: inline-block; /* Para centrar el botón */
+}
+.buttonSlideTwo:hover {
+  text-decoration: none;
+  color: #d2b18c;
 }
 
 .titleSlideTwo {
@@ -141,6 +149,10 @@
   font-weight: 600;
   text-decoration: none;
   display: inline-block; /* Para centrar el botón */
+}
+.buttonSlideLast:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .titleSlideThree {
