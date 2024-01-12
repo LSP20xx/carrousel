@@ -4,57 +4,200 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="style.css" />
     <title>Healing Blends Home</title>
   </head>
+
   <body>
-    <div id="carouselExampleAutoplaying" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active colorOneSlide">
-          <div class="containerSlideOne">
-            <div class="titleSlideOneArea">
-              <h1 class="titleSlideOne">Bundle & Save!</h1>
-              <div class="subtitleSlideOneArea">
-                <p class="subtitleSlideOne">
-                  Buy three Evenflo, <strong>Get 10% off.</strong>
-                </p>
-                <div class="buttonShopNowArea">
+    <!-- ACÁ EMPIEZA EL NUEVO CARROUSEL-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide colorOneSlide">
+          <!-- Uso de Bootstrap para la grilla -->
+          <div class="container firstContainer">
+            <div class="row firstRow">
+              <div class="col-sm-6 titleSlideOneArea">
+                <h1 class="titleSlideOne">Bundle & Save!</h1>
+                <div class="subtitleSlideOneArea">
+                  <p class="subtitleSlideOne">
+                    Buy three Evenflo, <strong>Get 10% off.</strong>
+                  </p>
+                  <div class="buttonShopNowArea">
+                    <a
+                      class="buttonShopNow"
+                      href="https://healingblendsglobal.com/collections/herbal-blends/products/evenflo?variant=28885891940445"
+                      >SHOP NOW</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 imageSlideOne">
+                <img
+                  src="./img/slideOneImage.png"
+                  class="img-responsive evenfloImageNonMobile"
+                />
+                <img
+                  src="./img/withoutPills.png"
+                  class="img-responsive evenfloImageMobile"
+                />
+              </div>
+            </div>
+
+            <div class="containerIconsArea">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img class="iconImage" src="./img/non-GMO.png" alt="" />
+                  <p class="textIcons">Non-GMO</p>
+                </div>
+                <div class="col-xs-3">
+                  <img class="iconImage" src="./img/glutenFree.png" alt="" />
+                  <p class="textIcons">Gluten Free</p>
+                </div>
+                <div class="col-xs-3">
+                  <img class="iconImage" src="./img/vegan.png" alt="" />
+                  <p class="textIcons">Vegan</p>
+                </div>
+                <div class="col-xs-3">
+                  <img class="iconImage" src="./img/noArtificialColors.png" />
+                  <p class="textIcons">No Artificial Colors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--ACÁ EMPIEZA LA SLIDE TWO-->
+        <div class="swiper-slide colorTwoSlide">
+          <div class="container womanJuiceBackground">
+            <!-- Área del título y subtítulo -->
+            <div class="row">
+              <div class="col-sm-1"></div>
+
+              <div class="col-sm-4">
+                <h2 class="titleSlideTwo">
+                  All of your <b>essential</b> fruits, <br />
+                  veggies, prebiotics,<br />
+                  probiotics and <br />
+                  adaptogens all in one.
+                </h2>
+                <div class="sutitleSlideTwoArea">
+                  <p class="sutitleSlideTwo">
+                    And it doesn't taste like your chewing on grass.
+                  </p>
                   <a
-                    class="buttonShopNow"
-                    href="https://healingblendsglobal.com/collections/herbal-blends/products/evenflo?variant=28885891940445"
+                    class="buttonSlideTwo"
+                    href="https://healingblendsglobal.com/collections/vitamins/products/super-juice-blend?variant=28897967079517"
                     >SHOP NOW</a
                   >
                 </div>
               </div>
+
+              <!-- Área de la imagen principal -->
+              <div class="col-sm-3 superJuiceArea">
+                <img
+                  src="./img/super-Juice.png"
+                  class="img-responsive superJuiceImage"
+                />
+              </div>
+
+              <!-- Área de la segunda imagen -->
+              <div class="col-sm-4 womenJuiceImageArea">
+                <img
+                  src="./img/secondSlideImage.png"
+                  class="img-responsive womenJuiceImage"
+                />
+              </div>
             </div>
-            <div class="imageSlideOne">
-              <img
-                src="./img/slideOneImage.png"
-                class="d-block evenfloImage"
-                alt="..."
-              />
+
+            <!-- Área de íconos -->
+            <div class="containerIconsArea">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img class="iconImage" src="./img/non-GMO.png" alt="" />
+                  <p class="textIcons">Non-GMO</p>
+                </div>
+                <div class="col-xs-3">
+                  <img class="iconImage" src="./img/glutenFree.png" alt="" />
+                  <p class="textIcons">Gluten Free</p>
+                </div>
+                <div class="col-xs-3">
+                  <img class="iconImage" src="./img/vegan.png" alt="" />
+                  <p class="textIcons">Vegan</p>
+                </div>
+                <div class="col-xs-3">
+                  <img class="iconImage" src="./img/noArtificialColors.png" />
+                  <p class="textIcons">No Artificial Colors</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="containerIconsArea">
-            <div class="containerIcons">
-              <div>
+        </div>
+        <!--ACÁ EMPIEZA LA SLIDE 3-->
+        <div class="swiper-slide colorThreeSlide">
+          <div class="container yogaWomanBackground">
+            <div class="row">
+              <!-- Área de la imagen de la mujer en yoga -->
+              <div class="col-md-4 yogaWomanImageArea">
+                <img
+                  src="./img/yogaWomanImage.jpg"
+                  class="img-responsive yogaWomanImage"
+                />
+              </div>
+
+              <!-- Área del título, subtítulo y botón -->
+              <div class="col-md-4">
+                <div class="titleSlideThreeArea">
+                  <h2 class="titleSlideThree">
+                    Kick stress and anxiety to the curb!
+                  </h2>
+                </div>
+                <div class="subtitleSlideThreeArea">
+                  <p class="subtitleSlideThree">With this dynamic duo.</p>
+                </div>
+                <div class="buttonSlideThree">
+                  <a
+                    class="buttonSlideLast"
+                    href="https://healingblendsglobal.com/collections/all/products/destress-starter-kit?variant=30863678373981"
+                    >SHOP NOW</a
+                  >
+                </div>
+              </div>
+
+              <!-- Área de la imagen secundaria -->
+              <div class="col-md-4 lessStressImageArea">
+                <img
+                  src="./img/lessStress-peacefulCalm.png"
+                  class="img-responsive peacefulcalmImage"
+                />
+              </div>
+            </div>
+
+            <!-- Área de íconos -->
+            <div class="row containerIconsArea">
+              <div class="col-xs-3">
                 <img class="iconImage" src="./img/non-GMO.png" alt="" />
                 <p class="textIcons">Non-GMO</p>
               </div>
-              <div>
+              <div class="col-xs-3">
                 <img class="iconImage" src="./img/glutenFree.png" alt="" />
                 <p class="textIcons">Gluten Free</p>
               </div>
-              <div>
+              <div class="col-xs-3">
                 <img class="iconImage" src="./img/vegan.png" alt="" />
                 <p class="textIcons">Vegan</p>
               </div>
-              <div>
+              <div class="col-xs-3">
                 <img
                   class="iconImage"
                   src="./img/noArtificialColors.png"
@@ -65,143 +208,32 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item colorTwoSlide">
-          <div class="containerSlideTwo">
-            <div class="titleSlideTwoArea">
-              <h2 class="titleSlideTwo">
-                All of your essential fruits, veggies, prebiotics, probiotics
-                and adaptogens all in one.
-              </h2>
 
-              <div class="sutitleSlideTwoArea">
-                <p class="sutitleSlideTwo">
-                  And it doesn't taste like your chewing on grass.
-                </p>
-                <a
-                  class="buttonSlideTwo"
-                  href="https://healingblendsglobal.com/collections/vitamins/products/super-juice-blend?variant=28897967079517"
-                  >SHOP NOW</a
-                >
-              </div>
-            </div>
-            <div class="superJuiceArea">
-              <img
-                src="./img/super-Juice.png"
-                class="superJuiceImage"
-                alt="..."
-              />
-            </div>
-            <div class="womenJuiceImageArea">
-              <img
-                src="./img/secondSlideImage.png"
-                class="d-md-block d-none w-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="containerIconsColor">
-            <div>
-              <img class="iconImage" src="./img/non-GMO.png" alt="" />
-              <p class="textIcons">Non-GMO</p>
-            </div>
-            <div>
-              <img class="iconImage" src="./img/glutenFree.png" alt="" />
-              <p class="textIcons">Gluten Free</p>
-            </div>
-            <div>
-              <img class="iconImage" src="./img/vegan.png" alt="" />
-              <p class="textIcons">Vegan</p>
-            </div>
-            <div>
-              <img
-                class="iconImage"
-                src="./img/noArtificialColors.png"
-                alt=""
-              />
-              <p class="textIcons">No Artificial Colors</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item colorThreeSlide">
-          <div class="containerSlideThree">
-            <div class="yogaWomanImageArea">
-              <img
-                src="./img/yogaWomanImage.jpg"
-                class="d-md-block d-none w-100"
-                alt="..."
-              />
-            </div>
-            <div class="titleSlideThreeArea">
-              <h2 class="titleSlideThree">
-                Kick stress and anxiety to the curb!
-              </h2>
-            </div>
-            <div class="subtitleSlideThreeArea">
-              <p class="subtitleSlideThree">With this dynamic duo.</p>
-            </div>
-            <div class="buttonSlideThree">
-              <a
-                class="buttonSlideLast"
-                href="https://healingblendsglobal.com/collections/all/products/destress-starter-kit?variant=30863678373981"
-                >SHOP NOW</a
-              >
-            </div>
-            <div class="lessStressImageArea">
-              <img
-                src="./img/lessStress-peacefulCalm.png"
-                class="d-block peacefulcalmImage"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="containerIconsColor">
-            <div>
-              <img class="iconImage" src="./img/non-GMO.png" alt="" />
-              <p class="textIcons">Non-GMO</p>
-            </div>
-            <div>
-              <img class="iconImage" src="./img/glutenFree.png" alt="" />
-              <p class="textIcons">Gluten Free</p>
-            </div>
-            <div>
-              <img class="iconImage" src="./img/vegan.png" alt="" />
-              <p class="textIcons">Vegan</p>
-            </div>
-            <div>
-              <img
-                class="iconImage"
-                src="./img/noArtificialColors.png"
-                alt=""
-              />
-              <p class="textIcons">No Artificial Colors</p>
-            </div>
-          </div>
-        </div>
+        <!--Acá termina la slide 3-->
       </div>
-      <button
-        class="carousel-control-prev controlPrev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next controlNext"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
