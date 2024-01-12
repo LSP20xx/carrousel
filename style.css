@@ -176,8 +176,43 @@
   background-color: #fff8f1;
 }
 
+.colorThreeSlide {
+  background-color: #fbf7f6;
+}
+
 .womenJuiceImageArea {
   padding-right: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .containerIconsArea {
+    padding: 0 35rem;
+  }
+  .titleSlideTwo {
+    margin-top: 6rem;
+    margin-left: 0;
+  }
+  .sutitleSlideTwoArea {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .titleSlideOneArea {
+    padding-left: 0;
+    margin-top: 6em;
+  }
+  .containerIconsArea {
+    padding: 0 20rem;
+  }
+  .titleSlideTwo {
+    font-size: 28px;
+    margin-left: 0px;
+    margin-top: 3rem;
+  }
+  .sutitleSlideTwoArea {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 991px) {
   .womenJuiceImage {
@@ -186,7 +221,7 @@
   .womanJuiceBackground {
     background-image: url(./img/womanJuiceBG.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     min-width: 100vw;
   }
   .superJuiceImage {
@@ -241,18 +276,7 @@
     padding: 0 1rem;
   }
 }
-@media screen and (max-width: 767px) {
-  .titleSlideTwo {
-    margin-left: 0;
-    font-size: 24px;
-  }
-  .sutitleSlideTwoArea {
-    margin-left: 0;
-  }
-  .sutitleSlideTwo {
-    font-size: 16px;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .row,
   .container {
@@ -267,9 +291,13 @@
     margin-bottom: 20px;
   }
 
+  .subtitleSlideOne {
+    font-size: 26px;
+  }
+
   .titleSlideOneArea {
     padding-left: 0;
-    margin-top: 1em;
+    margin-top: 6em;
   }
   .containerIconsArea {
     padding: 0 10rem;
@@ -291,33 +319,18 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  .titleSlideOneArea {
-    padding-left: 0;
-    margin-top: 6em;
-  }
-  .containerIconsArea {
-    padding: 0 20rem;
-  }
+@media screen and (max-width: 767px) {
   .titleSlideTwo {
-    font-size: 28px;
-    margin-left: 0px;
-    margin-top: 3rem;
+    margin-left: 0;
+    font-size: 24px;
   }
   .sutitleSlideTwoArea {
     margin-left: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .containerIconsArea {
-    padding: 0 35rem;
+  .sutitleSlideTwo {
+    font-size: 16px;
   }
-  .titleSlideTwo {
-    margin-top: 6rem;
-    margin-left: 0;
-  }
-  .sutitleSlideTwoArea {
-    margin-left: 0;
+  .womanJuiceBackground {
+    background-position: center;
   }
 }
