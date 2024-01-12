@@ -109,8 +109,8 @@
 }
 .superJuiceImage {
   width: 80%;
-  margin-top: 6rem;
-  margin-left: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .containerIconsColor .iconImage {
@@ -236,7 +236,7 @@
     float: right !important;
     position: relative !important;
     right: 0 !important;
-    left: 0 !important;
+    top: 0 !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -246,7 +246,7 @@
   .womanJuiceBackground {
     background-image: url(./img/womanJuiceBG.png);
     background-size: cover;
-    background-position: right;
+    background-position: 70%;
     min-width: 100vw;
   }
   .superJuiceImage {
@@ -329,6 +329,9 @@
   }
   .superJuiceImage {
     width: 100%;
+    position: absolute;
+    right: 40px;
+    top: 50px;
   }
   .titleSlideTwo {
     font-size: 28px;
@@ -357,6 +360,7 @@
   }
   .sutitleSlideTwo {
     font-size: 16px;
+    max-width: 200px;
   }
   .womanJuiceBackground {
     background-position: 72%;
