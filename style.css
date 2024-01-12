@@ -26,6 +26,10 @@
   display: none;
 }
 
+.swiper-pagination-bullet-active {
+  background-color: #3a2012;
+}
+
 .titleSlideOne {
   background-color: #467034;
   color: white;
@@ -203,15 +207,23 @@
     margin-top: 6em;
   }
   .containerIconsArea {
-    padding: 0 20rem;
+    padding: 0 30rem !important;
   }
   .titleSlideTwo {
-    font-size: 28px;
+    font-size: 36px !important;
     margin-left: 0px;
-    margin-top: 3rem;
+    margin-top: 3rem !important;
   }
   .sutitleSlideTwoArea {
     margin-left: 0;
+  }
+  .superJuiceImage {
+    width: 80% !important;
+    margin-top: 20% !important;
+    float: right !important;
+    position: relative !important;
+    right: 0 !important;
+    left: 0 !important;
   }
 }
 @media screen and (max-width: 991px) {
@@ -300,16 +312,15 @@
     margin-top: 6em;
   }
   .containerIconsArea {
-    padding: 0 10rem;
+    padding: 0 20rem;
   }
   .superJuiceImage {
     width: 100%;
-    margin-top: 10%;
-    float: right;
   }
   .titleSlideTwo {
     font-size: 28px;
     margin-left: 0;
+    margin-top: 5rem;
   }
   .sutitleSlideTwoArea {
     margin-left: 0;
@@ -331,6 +342,6 @@
     font-size: 16px;
   }
   .womanJuiceBackground {
-    background-position: center;
+    background-position: 72%;
   }
 }
